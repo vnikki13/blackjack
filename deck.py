@@ -27,11 +27,9 @@ class Deck:
                 card = Card(rank, suit)
                 self.cards.append(card)
 
+    ''' Modifies the original deck'''
     def shuffle(self):
         random.shuffle(self.cards)
 
     def deal(self):
         return self.cards.pop()
-
-    
-    
