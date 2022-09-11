@@ -2,7 +2,7 @@ from deck import Deck
 from hand import Hand
 
 class Game:
-    def __init__(self):  
+    def __init__(self):
         self.deck = Deck()
         self.deck.shuffle()
         self.player_hand = Hand()
