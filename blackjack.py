@@ -1,3 +1,5 @@
+from card import Card
+
 suits = [ 'Spades', 'Hearts', 'Diamonds', 'Clubs']
 ranks = [
     {"rank": "A", "value": 11},
@@ -19,6 +21,8 @@ cards = []
 
 for suit in suits:
     for rank in ranks:
-        cards.append({"rank": rank["rank"], "suit": suit})
+        card = Card(rank, suit)
+        cards.append(card)
 
-print(cards)
+for card in cards:
+    print(card)
