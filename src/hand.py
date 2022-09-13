@@ -15,7 +15,10 @@ class Hand:
             else:
                 print(card)
 
-        # Use formatting for UI spacing
+        if not self.dealer:
+            print("Value: ", self.get_value())
+
+        # Formatting for UI spacing
         print()
 
     def get_value(self):
@@ -34,3 +37,6 @@ class Hand:
 
     def is_blackjack(self):
         return True if self.get_value() == 21 else False
+
+
+# 3 + A = 14 < 17 => 3 + A + 8 = 12 < 17 => 3 + A + 8 + K = 22
