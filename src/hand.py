@@ -37,6 +37,3 @@ class Hand:
 
     def is_blackjack(self):
         return True if self.get_value() == 21 else False
-
-
-# 3 + A = 14 < 17 => 3 + A + 8 = 12 < 17 => 3 + A + 8 + K = 22

@@ -1,5 +1,5 @@
-from deck import Deck
-from hand import Hand
+from .deck import Deck
+from .hand import Hand
 
 class Game:
     def __init__(self):
@@ -75,5 +75,3 @@ class Game:
         self.dealer_hand.display(True)
 
         self.is_winner(True)
-
-Game().play()
